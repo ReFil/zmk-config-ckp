@@ -110,7 +110,7 @@
 		pwm_led_0 {
 			pwms = <&pwm0 17>;
 			label = "Backlight LED 0";
-			period = 50;
+			period = <50>;
 		};
 	};
 
