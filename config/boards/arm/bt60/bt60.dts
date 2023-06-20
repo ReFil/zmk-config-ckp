@@ -83,13 +83,7 @@
 		label = "EXT_POWER";
 		control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
 	};
-	encoder_1: &qdec0 {
-    status = "okay";
-    led-pre = <0>;
-    steps = <80>;
-    pinctrl-0 = <&qdec_default>;
-    pinctrl-names = "default";
-	};
+
 	encoder_2: encoder_2 {
 		compatible = "alps,ec11";
 		label = "ENCODER_TWO";
@@ -129,6 +123,14 @@
 		output-ohms = <100000>;
 		full-ohms = <(100000 + 100000)>;
 	};
+};
+
+encoder_1: &qdec0 {
+  status = "okay";
+  led-pre = <0>;
+  steps = <80>;
+  pinctrl-0 = <&qdec_default>;
+  pinctrl-names = "default";
 };
 
 &adc {
