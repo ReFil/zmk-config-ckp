@@ -30,7 +30,7 @@
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
-		sensors = <&encoder_1>;
+		sensors = <&encoder_3>;
 		triggers-per-rotation = <10>;
 	};
 
@@ -96,8 +96,8 @@
 	encoder_3: encoder_3 {
 		compatible = "alps,ec11";
 		label = "encoder_3";
-		a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		a-gpios = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <24>;
 		status = "okay";
 	};
@@ -125,14 +125,14 @@
 		full-ohms = <(100000 + 100000)>;
 	};
 };
-
+/*
 encoder_1: &qdec0 {
   status = "okay";
   led-pre = <0>;
   steps = <80>;
   pinctrl-0 = <&qdec_default>;
   pinctrl-names = "default";
-};
+};*/
 
 &adc {
 	status = "okay";
