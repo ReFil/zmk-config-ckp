@@ -1,10 +1,10 @@
 # Copyright (c) 2021 Polarity Works
 # SPDX-License-Identifier: MIT
 
-if BOARD_BT60
+if BOARD_BT10
 
 config BOARD
-	default "bt60"
+	default "bt10"
 
 if USB
 
@@ -25,10 +25,7 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
-
 config ZMK_KEYBOARD_NAME
-	default "BT60"
+	default "BT10"
 
-endif # BOARD_BT60
+endif # BOARD_BT10
