@@ -10,12 +10,22 @@
 
 		default_layer {
 			bindings = <
-				 &kp HOME    &kp END     &kp PGUP        &kp  PGDN
+				 &lt 1 HOME    &kp END     &kp PGUP        &kp  PGDN
 				  &kp KP_NUM  &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS
 				 &kp KP_N7   &kp KP_N8    &kp KP_N9       &kp KP_PLUS
 				   &kp KP_N4   &kp KP_N5    &kp KP_N6
 				&kp KP_N1   &kp KP_N2    &kp KP_N3       &kp KP_ENTER
 				      &kp KP_N0          &kp KP_DOT
+			>;
+		};
+		raise_layer {
+			bindings = <
+				 &kp HOME    &bt BT_CLR     &kp PGUP        &kp  PGDN
+				  &kp KP_NUM  &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS
+				 &kp KP_N7   &kp KP_N8    &kp KP_N9       &kp KP_PLUS
+				   &bt BT_SEL 4   &bt BT_SEL 5    &kp KP_N6
+				&bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3       &kp KP_ENTER
+				      &bt BT_SEL 0          &kp KP_DOT
 			>;
 		};
 	};
