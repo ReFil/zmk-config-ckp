@@ -25,7 +25,7 @@
 		zmk,backlight = &backlight;
 		zmk,matrix_transform = &default_transform;
 		zmk,battery = &vbatt;
-		zephyr,console = &cdc_acm_uart
+		zephyr,console = &cdc_acm_uart;
 	};
 
 	sensors {
